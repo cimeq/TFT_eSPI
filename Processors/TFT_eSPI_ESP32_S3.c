@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // Select the SPI port to use, ESP32 has 2 options
-#if !defined (TFT_PARALLEL_8_BIT)
+//#if !defined (TFT_PARALLEL_8_BIT)
   #ifdef CONFIG_IDF_TARGET_ESP32
     #ifdef USE_HSPI_PORT
       SPIClass spi = SPIClass(HSPI);
@@ -27,7 +27,7 @@
       SPIClass& spi = SPI;
     #endif
   #endif
-#endif
+//#endif
 
 #ifdef ESP32_DMA
   // DMA SPA handle
